@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class UIcontroller : MonoBehaviour
 {
@@ -21,7 +22,7 @@ public class UIcontroller : MonoBehaviour
     private GameObject Back;
     public void onPlay()
     {
-        //go to Main Scene
+        SceneManager.LoadScene("Mapscene");
     }
     public void onOption()
     {
