@@ -5,26 +5,26 @@ using UnityEngine.SceneManagement;
 
 public class UIcontroller : MonoBehaviour
 {
-    // Start is called before the first frame update
+    // Variables for UI component
     [SerializeField]
-    private GameObject MainUI;
+    private GameObject MainUI;  // Main UI: 4 buttons
 
     [SerializeField]
-    private GameObject Title;
+    private GameObject Title;   // Title text
 
     [SerializeField]
-    private GameObject Sliders;
+    private GameObject Sliders; // Option Slider
 
     [SerializeField]
-    private GameObject Credit;
+    private GameObject Credit; // Credit text
 
     [SerializeField]
-    private GameObject Back;
-    public void onPlay()
+    private GameObject Back;   // Button to return menu
+    public void onPlay()      // Pressing Play button
     {
         SceneManager.LoadScene("Mapscene");
     }
-    public void onOption()
+    public void onOption()    // Pressing Option Button
     {
         MainUI.SetActive(false);
         Title.SetActive(false);
@@ -32,7 +32,7 @@ public class UIcontroller : MonoBehaviour
         Credit.SetActive(false);
         Back.SetActive(true);
     }
-    public void onCredit()
+    public void onCredit()    // Pressing Credit
     {
         MainUI.SetActive(false);
         Title.SetActive(false);
@@ -41,7 +41,7 @@ public class UIcontroller : MonoBehaviour
         Back.SetActive(true);
     }
 
-    public void onMain()
+    public void onMain()    // Pressing Back 
     {
         MainUI.SetActive(true);
         Title.SetActive(true);
@@ -49,7 +49,7 @@ public class UIcontroller : MonoBehaviour
         Credit.SetActive(false);
         Back.SetActive(false);
     }
-    public void onExit()
+    public void onExit()     // Pressing Exit
     {
         UnityEditor.EditorApplication.isPlaying = false;
     }
