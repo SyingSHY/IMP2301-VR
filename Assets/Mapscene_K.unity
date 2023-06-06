@@ -1912,7 +1912,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_InteractableHoverMeshMaterial
       value: 
-      objectReference: {fileID: 2100000, guid: 9f25b785ca157441b8355bd4773b55f3, type: 2}
+      objectReference: {fileID: 2100000, guid: c1b52099dac2b475fb72e4a4055cb76c, type: 2}
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
       propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.size
@@ -2634,15 +2634,15 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 538864458}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &540679481 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6873719101686632133, guid: 9891a14b3744d4a58867601735e13253,
-    type: 3}
-  m_PrefabInstance: {fileID: 2042867744}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &540679482 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9067079195229647804, guid: 9891a14b3744d4a58867601735e13253,
+    type: 3}
+  m_PrefabInstance: {fileID: 2042867744}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &540679485 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 5154900715923381053, guid: 9891a14b3744d4a58867601735e13253,
     type: 3}
   m_PrefabInstance: {fileID: 2042867744}
   m_PrefabAsset: {fileID: 0}
@@ -4154,7 +4154,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_InteractableHoverMeshMaterial
       value: 
-      objectReference: {fileID: 2100000, guid: 9f25b785ca157441b8355bd4773b55f3, type: 2}
+      objectReference: {fileID: 2100000, guid: c1b52099dac2b475fb72e4a4055cb76c, type: 2}
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
       propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.size
@@ -4396,7 +4396,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_InteractableHoverMeshMaterial
       value: 
-      objectReference: {fileID: 2100000, guid: 9f25b785ca157441b8355bd4773b55f3, type: 2}
+      objectReference: {fileID: 2100000, guid: c1b52099dac2b475fb72e4a4055cb76c, type: 2}
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
       propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.size
@@ -10717,7 +10717,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_InteractableHoverMeshMaterial
       value: 
-      objectReference: {fileID: 2100000, guid: 9f25b785ca157441b8355bd4773b55f3, type: 2}
+      objectReference: {fileID: 2100000, guid: c1b52099dac2b475fb72e4a4055cb76c, type: 2}
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
       propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.size
@@ -10731,7 +10731,7 @@ PrefabInstance:
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
       propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
@@ -10743,7 +10743,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 540679481}
+      objectReference: {fileID: 540679485}
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
       propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
@@ -10756,12 +10756,32 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
+      propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: set_enabled
+      objectReference: {fileID: 0}
+    - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
+        type: 3}
       propertyPath: m_HoverExited.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: UnityEngine.Renderer, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
+      propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UnityEngine.Renderer, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
+        type: 3}
+      propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
+        type: 3}
       propertyPath: m_HoverExited.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
+        type: 3}
+      propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6873719101686632133, guid: 9891a14b3744d4a58867601735e13253,
@@ -10842,7 +10862,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_InteractableHoverMeshMaterial
       value: 
-      objectReference: {fileID: 2100000, guid: 9f25b785ca157441b8355bd4773b55f3, type: 2}
+      objectReference: {fileID: 2100000, guid: c1b52099dac2b475fb72e4a4055cb76c, type: 2}
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
       propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.size
@@ -11084,7 +11104,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_InteractableHoverMeshMaterial
       value: 
-      objectReference: {fileID: 2100000, guid: 9f25b785ca157441b8355bd4773b55f3, type: 2}
+      objectReference: {fileID: 2100000, guid: c1b52099dac2b475fb72e4a4055cb76c, type: 2}
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
       propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.size
