@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class lightbulb : MonoBehaviour
+public class lightbulb_K : MonoBehaviour
 {
     public GameObject bulb; 
     public int bulbcount = 6; 

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
-public class SocketInteraction : MonoBehaviour
+public class SocketInteraction_K : MonoBehaviour
 {
 
 
@@ -13,8 +13,9 @@ public class SocketInteraction : MonoBehaviour
 
     [SerializeField]
     private int clearnum = 6;
-    [SerializeField]
-    private Transform target;
+
+    //[SerializeField]
+    //private Transform target;
 
 
     [SerializeField]
@@ -24,21 +25,22 @@ public class SocketInteraction : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        SpawnObject();
+        //SpawnObject();
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.position = target.position + Vector3.up*offset.y
-             + target.right * offset.x
-             + target.forward * offset.z;
+        //transform.position = target.position + Vector3.up*offset.y
+        //     + target.right * offset.x
+        //     + target.forward * offset.z;
     }
 
     //when we put something into the socket;
     public void ItemInserted(SelectEnterEventArgs args) {
         Debug.Log(args.interactableObject.transform.gameObject + "was inserted");
         bulbcount -= 1;
+        Debug.Log(bulbcount);
         if (clearnum >= bulbcount) {
             SpawnObject();
         }

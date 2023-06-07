@@ -27,10 +27,10 @@ public class SocketResult_K : MonoBehaviour
 
     private void FixedUpdate()
     {
-         if (SocketInteraction.bulbcount >= 3) {
+         if (SocketInteraction_K.bulbcount >= 3) {
             Destroy(BlueDoor);
         }
-        if (SocketInteraction.bulbcount >= 6) {
+        if (SocketInteraction_K.bulbcount >= 6) {
             Destroy(RedDoor);
 }
     }
