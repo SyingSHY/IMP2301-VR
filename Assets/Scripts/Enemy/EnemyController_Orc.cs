@@ -4,23 +4,21 @@ using UnityEngine;
 using UnityEngine.AI;
 using static UnityEngine.GraphicsBuffer;
 
-public class EnemyController_Zombie : MonoBehaviour
+public class EnemyController_Orc : MonoBehaviour
 {
     // Bulb collection counter to check game progress
     // 게임 진행 상황 확인을 위한 수집된 전구 카운터
     public int levelCounter = 0;
 
-    [SerializeField]
-    Transform agentTarget;
+    [SerializeField] Transform agentTarget;
     // GunShooted 테스트용 변수
-    [SerializeField]
-    private bool GunshootTest = false;
+    [SerializeField] private bool GunshootTest = false;
     [SerializeField] private float startChaseRange = 2.0f;
     [SerializeField] private float finishChaseRange = 5.0f;
 
     private Animator animator;
     private NavMeshAgent navMeshAgent;
-    private int isWalkingHash, isRunningHash, isStunnedHash, isLightShootedHash, isGunShootedHash, isGameWinHash, isCatchPlayerHash;
+    private int isWalkingHash, isStunnedHash, isLightShootedHash, isGunShootedHash, isGameWinHash, isCatchPlayerHash;
     private float distBtwPlayer;
     private bool isChasing = false;
     private bool isCatchPlayer;
@@ -32,7 +30,6 @@ public class EnemyController_Zombie : MonoBehaviour
         navMeshAgent = GetComponent<NavMeshAgent>();
 
         isWalkingHash = Animator.StringToHash("isWalking");
-        isRunningHash = Animator.StringToHash("isRunning");
         isLightShootedHash = Animator.StringToHash("isLightShooted");
         isStunnedHash = Animator.StringToHash("isStunned");
         isGunShootedHash = Animator.StringToHash("isGunShooted");
@@ -44,7 +41,6 @@ public class EnemyController_Zombie : MonoBehaviour
     void Update()
     {
         bool isWalking = animator.GetBool(isWalkingHash);
-        bool isRunning = animator.GetBool(isRunningHash);
         bool isLightShooted = animator.GetBool(isLightShootedHash);
         bool isStunned = animator.GetBool(isStunnedHash);
         bool isGunShooted = animator.GetBool(isGunShootedHash);
@@ -63,20 +59,17 @@ public class EnemyController_Zombie : MonoBehaviour
         if (levelCounter < 2 && isGunShooted == false && isChasing == false)
         {
             animator.SetBool("isWalking", false);
-            animator.SetBool("isRunning", false);
             navMeshAgent.speed = 0f;
         }
         else if (levelCounter < 5 && isGunShooted == false && isChasing == true)
         {
             animator.SetBool("isWalking", true);
-            animator.SetBool("isRunning", false);
             navMeshAgent.speed = 0.6f;
         }
         else if (levelCounter < 6 && isGunShooted == false && isChasing == true)
         {
-            animator.SetBool("isWalking", false);
-            animator.SetBool("isRunning", true);
-            navMeshAgent.speed = 1.5f;
+            animator.SetBool("isWalking", true);
+            navMeshAgent.speed = 1.2f;
         }
         else
         {
@@ -120,8 +113,7 @@ public class EnemyController_Zombie : MonoBehaviour
         animator.SetBool("isGunShooted", true);
         navMeshAgent.speed = 0f;
 
-        Invoke("DisableStun", 7);
-        Invoke("GetRecover", 10);
+        Invoke("GetRecover", 1.5f);
     }
 
     // Called by SendMessage() : Enemy got shooted by Player's flashlight
@@ -135,27 +127,20 @@ public class EnemyController_Zombie : MonoBehaviour
     }
 
     // Called by GunShooted() : Get recover from knock-down which caused by Player's shoot
-    private void DisableStun()
-    {
-        animator.SetBool("isStunned", false);
-    }
-
-    // Called by GunShooted() : Get recover from knock-down which caused by Player's shoot
     private void GetRecover()
     {
-        animator.SetBool("isGunShooted", false);
+        navMeshAgent.speed = 0.6f;
     }
 
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Player")
         {
-            // Shut down control of Player
-            // 병합 후에 작성 예정
-
             isCatchPlayer = true;
 
-            // collision.transform.parent = transform;
+            // Shut down control of Player
+            collision.transform.parent = transform;
+            // 병합 후에 작성 예정
 
             // 게임오버 씬으로 이동
             Debug.Log("You've caught by enemy. Game Over.");

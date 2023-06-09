@@ -1,9 +1,49 @@
 fileFormatVersion: 2
-guid: c6ee7403513d3bd489f056e8fb5e6987
+guid: 2736bea3c94e3c045ac9a78c26744af7
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ch25_1001_Diffuse
+    second: {fileID: 2800000, guid: 051df987d9d826940abe8005f3128f17, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ch25_1001_Glossiness
+    second: {fileID: 2800000, guid: 338c7e3f70d94ea40ae0df14db36af89, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ch25_1001_Normal
+    second: {fileID: 2800000, guid: 0d8dcd97699bc29418e66b3b8a5a0095, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ch25_1001_Specular
+    second: {fileID: 2800000, guid: cd7d2ad647fe38441901e867df1c58df, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ch25_1002_Diffuse
+    second: {fileID: 2800000, guid: 197f27105713c84469e588c7b4bb9661, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ch25_1002_Glossiness
+    second: {fileID: 2800000, guid: 45fe3f2cd5833ee46ae3256fdc041004, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ch25_1002_Normal
+    second: {fileID: 2800000, guid: 7de80b69ca8d2fa45b5b37a7f9505e8c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ch25_1002_Specular
+    second: {fileID: 2800000, guid: 9afed306f51e4794f8e3bcc87074f835, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -33,24 +73,24 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Laying Seizure
+      name: Orc Idle
       takeName: mixamo.com
-      internalID: -203655887218126122
+      internalID: 1827226128182048838
       firstFrame: 0
-      lastFrame: 120
+      lastFrame: 160
       wrapMode: 0
       orientationOffsetY: 0
-      level: -0.1
+      level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
       loopTime: 1
-      loopBlend: 0
-      loopBlendOrientation: 1
-      loopBlendPositionY: 1
-      loopBlendPositionXZ: 1
-      keepOriginalOrientation: 1
-      keepOriginalPositionY: 0
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
       keepOriginalPositionXZ: 0
       heightFromFeet: 0
       mirror: 0
@@ -118,15 +158,15 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     globalScale: 1
-    rootMotionBoneName: mixamorig:Hips
+    rootMotionBoneName: 
     hasTranslationDoF: 0
-    hasExtraRoot: 1
+    hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
-  avatarSetup: 1
+  avatarSetup: 0
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
   remapMaterialsIfMaterialImportModeIsNone: 0
   additionalBone: 0
