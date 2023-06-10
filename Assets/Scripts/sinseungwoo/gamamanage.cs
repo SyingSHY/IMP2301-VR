@@ -19,7 +19,7 @@ public class gamamanage : MonoBehaviour
 
     private bool isbulb = false; //bool variables for instantiating. script should only instantiate one time at each time.
 
-    private int bulbcount = 0; //when player get the bulb and put it. the bulbcount will go up.
+    public int bulbcount = 0; //when player get the bulb and put it. the bulbcount will go up.
     // Start is called before the first frame update
     void Start()
     {
@@ -149,7 +149,7 @@ public class gamamanage : MonoBehaviour
         
         Instantiate(breeze, new Vector3(-0.5f, 0, 6f), Quaternion.identity);
 
-        Destroy(escapedoor); //exit is open
+       
 
         ahh.Play();
 

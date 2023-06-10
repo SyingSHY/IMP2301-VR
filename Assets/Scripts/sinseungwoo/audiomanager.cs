@@ -13,6 +13,9 @@ public class audiomanager : MonoBehaviour
     [SerializeField]
     private AudioSource breeze;
 
+
+    
+
     public void dangercall() //get call from danger audio trigger box. 
     {
         Debug.Log("Got the sound!");
@@ -30,4 +33,6 @@ public class audiomanager : MonoBehaviour
         Debug.Log("Got the sound!");
         breeze.Play(); //play the sound
     }
+
+    
 }
