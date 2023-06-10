@@ -45,7 +45,7 @@ PrefabInstance:
     - target: {fileID: 3824668332826982719, guid: 3af6fbe16fc5544ec8e60c6beeb3a17b,
         type: 3}
       propertyPath: m_Name
-      value: lightBulb Variant
+      value: lightbulbPRef
       objectReference: {fileID: 0}
     - target: {fileID: 4492379356750291845, guid: 3af6fbe16fc5544ec8e60c6beeb3a17b,
         type: 3}
@@ -104,3 +104,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3af6fbe16fc5544ec8e60c6beeb3a17b, type: 3}
+--- !u!1 &1663113240181434673 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3824668332826982719, guid: 3af6fbe16fc5544ec8e60c6beeb3a17b,
+    type: 3}
+  m_PrefabInstance: {fileID: 2452037629858091022}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3794199503326830858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1663113240181434673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aca5e30927df7c54283467974c219c4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  danger: {fileID: 0}
+  choir: {fileID: 0}
+  breeze: {fileID: 0}
+  ahh: {fileID: 0}
+  putbulb: {fileID: 0}
+  bulb: {fileID: 1663113240181434673}
+  shotgun: {fileID: 0}
+  shotgundoor: {fileID: 0}
+  escapedoor: {fileID: 0}
