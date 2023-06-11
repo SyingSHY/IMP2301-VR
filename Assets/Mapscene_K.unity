@@ -361,6 +361,7 @@ MonoBehaviour:
   shotgun: {fileID: 4126664889307814109, guid: 9019347409a4d3f4b8b1fe9dcbcaec48, type: 3}
   shotgundoor: {fileID: 839908651}
   escapedoor: {fileID: 1917695772}
+  bulbcount: 0
 --- !u!65 &81997216
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -763,6 +764,7 @@ MonoBehaviour:
   shotgun: {fileID: 0}
   shotgundoor: {fileID: 0}
   escapedoor: {fileID: 0}
+  bulbcount: 0
 --- !u!1 &173824291
 GameObject:
   m_ObjectHideFlags: 0
@@ -1979,7 +1981,7 @@ PrefabInstance:
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
       propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
@@ -1989,7 +1991,7 @@ PrefabInstance:
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
@@ -2019,12 +2021,12 @@ PrefabInstance:
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 1
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
@@ -2050,12 +2052,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1910990588}
+      objectReference: {fileID: 81997215}
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 170618336}
+      objectReference: {fileID: 427867022}
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[2].m_Target
@@ -2120,12 +2122,12 @@ PrefabInstance:
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ItemInserted
+      value: socketeventcalling
       objectReference: {fileID: 0}
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: socketeventcalling
+      value: set_enabled
       objectReference: {fileID: 0}
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
@@ -2155,12 +2157,12 @@ PrefabInstance:
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: SocketInteraction_K, Assembly-CSharp
+      value: gamamanage, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: gamamanage, Assembly-CSharp
+      value: UnityEngine.Collider, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
@@ -4268,12 +4270,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 839908651}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &847052613 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6873719101686632133, guid: 9891a14b3744d4a58867601735e13253,
-    type: 3}
-  m_PrefabInstance: {fileID: 899327778}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &853547004 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3190345343955440047, guid: 9891a14b3744d4a58867601735e13253,
@@ -4453,7 +4449,7 @@ PrefabInstance:
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
       propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
@@ -4463,7 +4459,7 @@ PrefabInstance:
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
@@ -4493,12 +4489,12 @@ PrefabInstance:
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 1
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
@@ -4524,13 +4520,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1651377362}
+      objectReference: {fileID: 81997215}
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 3794199503326830858, guid: 9023ca5b4056345fe8ac975a2cc70d0a,
-        type: 3}
+      objectReference: {fileID: 899327779}
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[2].m_Target
@@ -4595,12 +4590,12 @@ PrefabInstance:
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ItemInserted
+      value: socketeventcalling
       objectReference: {fileID: 0}
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: socketeventcalling
+      value: set_enabled
       objectReference: {fileID: 0}
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
@@ -4630,12 +4625,12 @@ PrefabInstance:
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: SocketInteraction_K, Assembly-CSharp
+      value: gamamanage, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: gamamanage, Assembly-CSharp
+      value: UnityEngine.Collider, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
@@ -4902,7 +4897,7 @@ PrefabInstance:
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
       propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
@@ -4912,7 +4907,7 @@ PrefabInstance:
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
@@ -4942,7 +4937,7 @@ PrefabInstance:
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 0
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
@@ -4973,13 +4968,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1651377362}
+      objectReference: {fileID: 913196857}
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 3794199503326830858, guid: 9023ca5b4056345fe8ac975a2cc70d0a,
-        type: 3}
+      objectReference: {fileID: 81997215}
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[2].m_Target
@@ -5044,7 +5038,7 @@ PrefabInstance:
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ItemInserted
+      value: set_enabled
       objectReference: {fileID: 0}
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
@@ -5079,7 +5073,7 @@ PrefabInstance:
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: SocketInteraction_K, Assembly-CSharp
+      value: UnityEngine.Collider, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
@@ -9894,20 +9888,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 899327778}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1827601305
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 847052613}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81d5ec5a4ba354909bfb2cb6bacaa9e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lightbulb: {fileID: 170618335}
-  clearnum: 6
 --- !u!23 &1827601308 stripped
 MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 5154900715923381053, guid: 9891a14b3744d4a58867601735e13253,
@@ -11552,7 +11532,7 @@ PrefabInstance:
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
       propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
@@ -11562,7 +11542,7 @@ PrefabInstance:
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
@@ -11592,7 +11572,7 @@ PrefabInstance:
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 0
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
@@ -11623,13 +11603,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1651377362}
+      objectReference: {fileID: 2042867745}
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 3794199503326830858, guid: 9023ca5b4056345fe8ac975a2cc70d0a,
-        type: 3}
+      objectReference: {fileID: 81997215}
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[2].m_Target
@@ -11694,7 +11673,7 @@ PrefabInstance:
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ItemInserted
+      value: set_enabled
       objectReference: {fileID: 0}
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
@@ -11729,7 +11708,7 @@ PrefabInstance:
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: SocketInteraction_K, Assembly-CSharp
+      value: UnityEngine.Collider, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
@@ -11904,7 +11883,7 @@ PrefabInstance:
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
       propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
@@ -11914,7 +11893,7 @@ PrefabInstance:
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
@@ -11944,7 +11923,7 @@ PrefabInstance:
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 0
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
@@ -11975,13 +11954,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1651377362}
+      objectReference: {fileID: 2075510631}
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 3794199503326830858, guid: 9023ca5b4056345fe8ac975a2cc70d0a,
-        type: 3}
+      objectReference: {fileID: 81997215}
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[2].m_Target
@@ -12046,7 +12024,7 @@ PrefabInstance:
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ItemInserted
+      value: set_enabled
       objectReference: {fileID: 0}
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
@@ -12081,7 +12059,7 @@ PrefabInstance:
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: SocketInteraction_K, Assembly-CSharp
+      value: UnityEngine.Collider, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
@@ -12353,7 +12331,7 @@ PrefabInstance:
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
       propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
@@ -12393,12 +12371,12 @@ PrefabInstance:
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 1
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
@@ -12419,13 +12397,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 858383991}
+      objectReference: {fileID: 81997215}
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 3794199503326830858, guid: 9023ca5b4056345fe8ac975a2cc70d0a,
-        type: 3}
+      objectReference: {fileID: 1482342863115771976}
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
       propertyPath: m_HoverExited.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
@@ -12479,12 +12456,12 @@ PrefabInstance:
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ItemInserted
+      value: socketeventcalling
       objectReference: {fileID: 0}
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: socketeventcalling
+      value: set_enabled
       objectReference: {fileID: 0}
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
@@ -12509,12 +12486,12 @@ PrefabInstance:
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: SocketInteraction_K, Assembly-CSharp
+      value: gamamanage, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: gamamanage, Assembly-CSharp
+      value: UnityEngine.Collider, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6261755474474115657, guid: 9891a14b3744d4a58867601735e13253,
         type: 3}

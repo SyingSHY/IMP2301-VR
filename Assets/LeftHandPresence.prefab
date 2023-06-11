@@ -44,9 +44,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e33a415be2bbc4c3baccc12dcc8504d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controllerPrefab: {fileID: 0}
-  handAnimator: {fileID: 109434732388006827, guid: 65847589f926b734d9eaed6e25f0046b,
+  controllerPrefab: {fileID: 4245457492171364763, guid: c836783e3928a624e9ff9c70d4f21606,
     type: 3}
+  deviceCharacteristics: 320
   showController: 0
   handPrefab: {fileID: 109434732395284509, guid: 65847589f926b734d9eaed6e25f0046b,
     type: 3}
