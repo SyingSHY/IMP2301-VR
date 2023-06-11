@@ -7,18 +7,13 @@ public class HandPresence_K : MonoBehaviour
 {
     private InputDevice targetDevice;
 
-    [SerializeField]
-    private GameObject controllerPrefab;
-
-    private GameObject spawnedController;
-
+  
+ 
 
     [SerializeField]
     private InputDeviceCharacteristics deviceCharacteristics;
 
-    // show controller or not?
-    [SerializeField]
-    private bool showController = false;
+
 
     [SerializeField]
     private GameObject handPrefab;
@@ -43,26 +38,19 @@ public class HandPresence_K : MonoBehaviour
 
         InputDevices.GetDevicesWithCharacteristics(deviceCharacteristics, devices);
 
-        /*        foreach(InputDevice dev in devices){
-                    Debug.Log(dev.name + ", " + dev.characteristics);
-                }*/
+  
 
-        if (devices.Count > 0)
-        {
-            targetDevice = devices[0];
+        //if (devices.Count > 0)
+        //{
+        //    targetDevice = devices[0];
+        //}
 
-            if (controllerPrefab)
-            {
-                spawnedController = Instantiate(controllerPrefab, transform);
-            }
-        }
-
-        // spawn hand model
-        if (spawnedHand == null)
-        {
+        //// spawn hand model
+        //if (spawnedHand == null)
+        //{
             spawnedHand = Instantiate(handPrefab, transform);
             handAnimator = spawnedHand.GetComponent<Animator>();
-        }
+        //}
 
 
     }
@@ -93,7 +81,7 @@ public class HandPresence_K : MonoBehaviour
     {
         if (targetDevice.TryGetFeatureValue(CommonUsages.trigger, out float triggerValue))
         {
-            //Debug.Log("trigger");
+            Debug.Log("trigger");
             handAnimator.SetFloat("Trigger", triggerValue);
 
         }
@@ -104,7 +92,7 @@ public class HandPresence_K : MonoBehaviour
 
         if (targetDevice.TryGetFeatureValue(CommonUsages.grip, out float gripValue))
         {
-            //Debug.Log("Grip");
+            Debug.Log("Grip");
             handAnimator.SetFloat("Grip", gripValue);
 
         }
