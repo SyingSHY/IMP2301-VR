@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class escape : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class escape : MonoBehaviour
         if(other.CompareTag("Player"))
         {
             Debug.Log("Cleared!");
+            SceneManager.LoadScene(0);
         }
     }
 }
