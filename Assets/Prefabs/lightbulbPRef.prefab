@@ -47,6 +47,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: lightbulbPRef
       objectReference: {fileID: 0}
+    - target: {fileID: 3824668332826982719, guid: 3af6fbe16fc5544ec8e60c6beeb3a17b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4492379356750291845, guid: 3af6fbe16fc5544ec8e60c6beeb3a17b,
         type: 3}
       propertyPath: m_RootOrder
@@ -131,3 +136,4 @@ MonoBehaviour:
   shotgun: {fileID: 0}
   shotgundoor: {fileID: 0}
   escapedoor: {fileID: 0}
+  bulbcount: 0

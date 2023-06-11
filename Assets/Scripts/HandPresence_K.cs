@@ -67,7 +67,7 @@ public class HandPresence_K : MonoBehaviour
         // has targetDevice been set yet?
         if (targetDevice.isValid)
         {
-            testInput();
+            //testInput();
         }
     }
 
@@ -91,6 +91,7 @@ public class HandPresence_K : MonoBehaviour
         }
     }
 
+    /*
     private void testInput()
     {
         if (targetDevice.TryGetFeatureValue(CommonUsages.primaryButton, out bool primaryButtonValue) && primaryButtonValue)
@@ -110,4 +111,5 @@ public class HandPresence_K : MonoBehaviour
             Debug.Log("Joystick moved " + movement);
         }
     }
+    */
 }
