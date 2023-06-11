@@ -1,5 +1,10 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Scenes/UIScene.unity.meta
 guid: fd9f4ef4178455440a7778bc03f03bbc
+========
+guid: f65f71fbf4447314d8fbc3b74c404f80
+folderAsset: yes
+>>>>>>>> Enemy:Assets/Animator.meta
 DefaultImporter:
   externalObjects: {}
   userData: 
