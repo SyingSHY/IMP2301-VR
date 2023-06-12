@@ -5,12 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class escape : MonoBehaviour
 {
+
+    [SerializeField] private GameClearFadeOut gameoverFade;
     private void OnTriggerEnter(Collider other)
     {
         if(other.CompareTag("Player"))
         {
             Debug.Log("Cleared!");
-            SceneManager.LoadScene(0);
+            gameoverFade.SendMessage("StartFadeOutAnim");
+            
         }
     }
 }

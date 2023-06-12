@@ -54,6 +54,10 @@ public class UIcontroller : MonoBehaviour
         UnityEditor.EditorApplication.isPlaying = false;
     }
 
+    public void returntomain()
+    {
+        SceneManager.LoadScene(0);
+    }
     // Update is called once per frame
     void Update()
     {
