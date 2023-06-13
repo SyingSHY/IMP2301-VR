@@ -77,7 +77,7 @@ public class EnemyController_Orc : MonoBehaviour
         }
 
         // Enemy running animation & agent speed setting
-        if (levelCounter < 2 && isGunShooted == false && isChasing == false)
+        if (levelCounter < 3 && isGunShooted == false && isChasing == false)
         {
             animator.SetBool("isWalking", false);
             navMeshAgent.speed = 0f;
@@ -90,11 +90,16 @@ public class EnemyController_Orc : MonoBehaviour
         else if (levelCounter < 6 && isGunShooted == false && isChasing == true)
         {
             animator.SetBool("isWalking", true);
-            navMeshAgent.speed = 1.2f;
+            navMeshAgent.speed = 1.0f;
         }
-        else if (levelCounter == 6 && isGunShooted == false && isChasing == true)
+        else if (LeverActionHandler.doorOpenedCleared && levelCounter == 6 && isGunShooted == false && isChasing == true)
         {
             animator.SetBool("isGameWin", true);
+        }
+        else if (isGunShooted == false && isChasing == false)
+        {
+            animator.SetBool("isWalking", false);
+            navMeshAgent.speed = 0f;
         }
         else
         {
@@ -113,15 +118,16 @@ public class EnemyController_Orc : MonoBehaviour
 
         if (levelCounter < 5)
         {
-            if (distBtwPlayer < 2 && levelCounter > 1)
+            if (distBtwPlayer < startChaseRange && levelCounter > 2)
             {
                 annoyingSound.Play();
                 isChasing = true;
             }
-            else if (distBtwPlayer > 5 && levelCounter > 1)
+            else if (distBtwPlayer > finishChaseRange && levelCounter > 2)
             {
                 isChasing = false;
             }
+            else isChasing = false;
         }
         else isChasing = true;
 
@@ -141,24 +147,17 @@ public class EnemyController_Orc : MonoBehaviour
         Invoke("GetRecover", 1.5f);
     }
 
-    // Called by SendMessage() : Enemy got shooted by Player's flashlight
-    public void LightShooted()
-    {
-        animator.SetBool("isGunShooted", true);
-        navMeshAgent.speed = 0f;
-
-        Invoke("DisableStun", 7);
-        Invoke("GetRecover", 10);
-    }
-
     // Called by GunShooted() : Get recover from knock-down which caused by Player's shoot
     private void GetRecover()
     {
+        animator.SetBool("isStunned", false);
+        animator.SetBool("isGunShooted", false);
         navMeshAgent.speed = 0.6f;
     }
 
     private void OnCollisionEnter(Collision collision)
     {
+        // If game is not overed and collided with Player, Player will die
         if (collision.gameObject.tag == "Player" && !isGameOverred)
         {
             isCatchPlayer = animator.GetBool(isCatchPlayerHash);
