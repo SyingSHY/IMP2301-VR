@@ -5174,7 +5174,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Escape '
+  m_text: Escape!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ae79d9c3a294114a849bb8cea5682ae, type: 2}
   m_sharedMaterial: {fileID: 7703333417164871781, guid: 9ae79d9c3a294114a849bb8cea5682ae,
