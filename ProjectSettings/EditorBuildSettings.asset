@@ -6,10 +6,21 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/UIScene.unity
+    guid: fd9f4ef4178455440a7778bc03f03bbc
+  - enabled: 1
     path: Assets/Scenes/Mapscene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    guid: aa9bc19ad32c043d689704129c9ece0f
+  - enabled: 1
+    path: Assets/Scenes/GameoverScene.unity
+    guid: 50459c5671821fe46b71f245f63a68bf
+  - enabled: 1
+    path: Assets/Scenes/GameclearScene.unity
+    guid: ac513702ab95b704c9851b5812b21d55
   m_configObjects:
-    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: e8924ceae353a2f4b9a3e7d3dc1c90a6,
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 88c5af2c33139cb439aef2e18e226753,
       type: 2}
-    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 8cc208caf06413a4799eaa3b353c3230,
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: ac873bf22ea5d8a44a843ba785f2735d,
+      type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 0da9cb103248fde4483e0fed22d0c761,
       type: 2}
